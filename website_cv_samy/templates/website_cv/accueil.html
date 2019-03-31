@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <title>Professional experience</title>
 
-    <h1>Bienvenue sur le blog des crêpes bretonnes !</h1>
+    <h1>Professional experience !</h1>
 
-    {% for article in derniers_articles %}
-        <div class="article">
-            <h3>{{ article.titre }}</h3>
-            <p>{{ article.contenu|truncatewords_html:80 }}</p>
-            <p><a href="{% url 'lire' article.id %}">Lire la suite</a></p>
+    {% for experience in experiences %}
+        <div class="ProfesionnalExperiences">
+            <h3>{{ experience.job }}</h3>
+            <p>{{ experience.description}}</p>
         </div>
     {% empty %}
-        <p>Aucun article.</p>
+        <p>No experience</p>
     {% endfor %}
+
+
 </head>
 <body>
 
