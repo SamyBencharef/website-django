@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from website_cv.models import ProfesionnalExperiences
-
+from website_cv.models import ProfesionnalExperiences, PersonalInformation, Education, Skill, Hobbie
 
 # Create your views here.
 
@@ -20,4 +19,14 @@ def view_portfolio(request, id_project):
 
 def view_profesionnalExperience(request):
     experiences = ProfesionnalExperiences.objects.all()
-    return render(request, 'website_cv/accueil.html', {'Last experience': experiences})
+    personal_infos = PersonalInformation.objects.all()
+    educations = Education.objects.all()
+    skills = Skill.objects.all()
+    hobbies = Hobbie.objects.all()
+
+    return render(request, 'website_cv/accueil.html',
+                  {'personal_infos': personal_infos,
+                   'experiences': experiences,
+                   'educations': educations,
+                   'skills': skills,
+                   'hobbies': hobbies})

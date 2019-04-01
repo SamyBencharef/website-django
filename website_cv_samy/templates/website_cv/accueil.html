@@ -2,12 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Professional experience</title>
+    <title>CV</title>
 
-    <h1>Professional experience !</h1>
+    {% for info in personal_infos %}
+        <h1>{{ info.first_name }} {{ info.last_name }}</h1>
+        <div class="personal_info">
+            <h3>{{ info.title }}</h3>
+            <p>{{ info.description}}</p>
+        </div>
+    {% empty %}
+        <p>No personal infos</p>
+    {% endfor %}
+
+    <h1> ------------------------------------------- </h1>
+
+    <h1>Professional experience :</h1>
 
     {% for experience in experiences %}
-        <div class="ProfesionnalExperiences">
+        <div class="job">
             <h3>{{ experience.job }}</h3>
             <p>{{ experience.description}}</p>
         </div>
@@ -16,6 +28,49 @@
     {% endfor %}
 
 
+    <h1> ------------------------------------------- </h1>
+
+    <h1>Education :</h1>
+
+    {% for education in educations %}
+        <div class="education">
+            <h3>{{ education.formation }} - {{ education.school }}, {{ education.location }}</h3>
+            <p>{{ education.description}}</p>
+        </div>
+    {% empty %}
+        <p>No education</p>
+    {% endfor %}
+
+
+    <h1> ------------------------------------------- </h1>
+
+    <h1>Skills :</h1>
+
+    {% for skill in skills %}
+        <div class="skills">
+            <h3>{{ skill.expertise }}</h3>
+            <p>{{ skill.details}}</p>
+        </div>
+    {% empty %}
+        <p>No skill</p>
+    {% endfor %}
+
+
+    <h1> ------------------------------------------- </h1>
+
+    <h1>Hobbies :</h1>
+
+    {% for hobbie in hobbies %}
+        <div class="hobbies">
+            <h3>{{ hobbie.expertise }}</h3>
+            <p>{{ hobbie.details}}</p>
+        </div>
+    {% empty %}
+        <p>No hobbie</p>
+    {% endfor %}
+
+
+    <h1> ------------------------------------------- </h1>
 </head>
 <body>
 
