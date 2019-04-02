@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from website_cv.models import ProfesionnalExperiences, PersonalInformation, Education, Skill, Hobbie
+from .forms import ContactForm
 
 # Create your views here.
 
@@ -24,9 +25,23 @@ def view_profesionnalExperience(request):
     skills = Skill.objects.all()
     hobbies = Hobbie.objects.all()
 
+    """ FORM PART """
+    form = ContactForm(request.POST or None)
+    sendForm = False
+
+    if form.is_valid():
+        name = form.cleaned_data['name']
+        email = form.cleaned_data['email']
+        topic = form.cleaned_data['topic']
+        message = form.cleaned_data['message']
+        forward = form.cleaned_data['forward']
+        sendForm = True
+
     return render(request, 'website_cv/accueil.html',
                   {'personal_infos': personal_infos,
                    'experiences': experiences,
                    'educations': educations,
                    'skills': skills,
-                   'hobbies': hobbies})
+                   'hobbies': hobbies,
+                   'form': form,
+                   'sendForm': sendForm})
