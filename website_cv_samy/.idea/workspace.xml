@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8f1e989-07f4-4137-8985-4f89d91eecad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/website_cv/forms.py" afterDir="false" />
+    <list default="true" id="c8f1e989-07f4-4137-8985-4f89d91eecad" name="Default Changelist" comment="Create the forms to allow the user at send an email.">
+      <change afterPath="$PROJECT_DIR$/website_cv/migrations/0007_email.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_cv/migrations/0008_remove_email_forward.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/website_cv/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/website_cv/accueil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website_cv/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/website_cv/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website_cv/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/website_cv/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website_cv/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website_cv/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website_cv_samy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/website_cv_samy/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,12 +32,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -41,19 +41,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website_cv/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="74" column="13" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website_cv/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="44" column="38" lean-forward="true" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+            <state relative-caret-position="-34">
+              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -64,8 +55,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website_cv/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#1#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,8 +67,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/website_cv/accueil.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="366">
+              <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website_cv/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1035">
+              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
             </state>
           </provider>
         </entry>
@@ -105,21 +108,21 @@
         <option value="$PROJECT_DIR$/website_cv_samy/urls.py" />
         <option value="$PROJECT_DIR$/templates/cv.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fefe9641-c7ca-49e8-93fc-9739850e9dc6/console.sql" />
-        <option value="$PROJECT_DIR$/website_cv_samy/settings.py" />
         <option value="$PROJECT_DIR$/website_cv/templates/accueil.html" />
         <option value="$PROJECT_DIR$/website_cv/urls.py" />
-        <option value="$PROJECT_DIR$/website_cv/models.py" />
-        <option value="$PROJECT_DIR$/website_cv/forms.py" />
+        <option value="$PROJECT_DIR$/website_cv_samy/settings.py" />
         <option value="$PROJECT_DIR$/templates/website_cv/accueil.html" />
+        <option value="$PROJECT_DIR$/website_cv/models.py" />
         <option value="$PROJECT_DIR$/website_cv/views.py" />
+        <option value="$PROJECT_DIR$/website_cv/forms.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="312" />
-    <option name="y" value="-28" />
-    <option name="width" value="1255" />
-    <option name="height" value="1030" />
+    <option name="x" value="797" />
+    <option name="y" value="-18" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -143,7 +146,19 @@
             <path>
               <item name="website_cv_samy" type="b2602c69:ProjectViewProjectNode" />
               <item name="website_cv_samy" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="website_cv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website_cv_samy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website_cv_samy" type="462c0819:PsiDirectoryNode" />
+              <item name="website_cv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website_cv_samy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website_cv_samy" type="462c0819:PsiDirectoryNode" />
+              <item name="website_cv" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="website_cv_samy" type="b2602c69:ProjectViewProjectNode" />
@@ -251,7 +266,8 @@
       <workItem from="1553256075490" duration="10154000" />
       <workItem from="1554047959972" duration="7435000" />
       <workItem from="1554122951023" duration="9404000" />
-      <workItem from="1554222862653" duration="2088000" />
+      <workItem from="1554222862653" duration="6606000" />
+      <workItem from="1554386883528" duration="6828000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1551805354202</created>
@@ -288,11 +304,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554133289009</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Create the forms to allow the user at send an email.">
+      <created>1554225158711</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554225158711</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37942000" />
+    <option name="totallyTimeSpent" value="49288000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -307,45 +330,45 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.103355706" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08993289" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49791956" visible="true" weight="0.39518413" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.65436244" visible="true" weight="0.33286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49930653" weight="0.32808024" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3653295" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49930653" weight="0.36819485" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3295129" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006935" side_tool="true" weight="0.32808024" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49930653" weight="0.31586403" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3456376" side_tool="true" weight="0.28796563" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49930653" weight="0.20057307" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.33094555" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.33094555" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.7226075" />
+      <window_info anchor="right" id="Database" order="4" weight="0.72214764" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16643551" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21636616" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49791956" visible="true" weight="0.39541548" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65436244" weight="0.66288954" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49930653" weight="0.32808024" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3653295" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49930653" weight="0.36819485" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3295129" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006935" side_tool="true" weight="0.32808024" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49930653" weight="0.31948423" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3456376" side_tool="true" visible="true" weight="0.28796563" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49930653" weight="0.31586403" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.33094555" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.33094555" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -404,12 +427,21 @@
     <MESSAGE value="Create the application which is going to contain the website" />
     <MESSAGE value="Creation of the first template with the jobs model:" />
     <MESSAGE value="Create all models and print them." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create all models and print them." />
+    <MESSAGE value="Create the forms to allow the user at send an email." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create the forms to allow the user at send an email." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/website_cv/views.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.052/Downloads/Lab_07_fileIO.ipynb" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.052/Downloads/Lab_09.ipynb" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.052/Downloads/Lab_10_solutions_part2.ipynb" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.052/Downloads/Lab_12_Classwork.ipynb" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.052/Downloads/Lab_2(1).ipynb" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.052/Downloads/Lab_23_it3_classes.ipynb" />
@@ -417,179 +449,32 @@
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.052/Downloads/moriarty-puzzle.ipynb" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.052/Downloads/using_functions(1).ipynb" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.052/Downloads/Lab_10_Exercises.ipynb" />
-    <entry file="file://$USER_HOME$/Downloads/Lab_01_Jupyter_Intro.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_01_Jupyter_Intro_ay19.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_01_First_Class.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_02.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_2(1).ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_02_ay_19_Jupyter_Intro_ay19.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_03_average.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_03_average_1.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_05_data_structures.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_06_data_structures.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_07_apache_log_files.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_07_fileIO.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_09.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_10_Exercises.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_10_solutions_part2.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_12_Classwork.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_23_it3_classes.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lab_N01_Twisted.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lect09_DB.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/moriarty-puzzle.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Untitled1.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/useagrs.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/using_functions(1).ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/subnetting_v3.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Lab_01_Jupyter_Intro.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_01_Jupyter_Intro_ay19.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_01_First_Class.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_02.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_2(1).ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_02_ay_19_Jupyter_Intro_ay19.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_03_average.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_03_average_1.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_05_data_structures.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_06_data_structures.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_07_apache_log_files.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_07_fileIO.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_09.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_10_Exercises.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_10_solutions_part2.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_12_Classwork.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_23_it3_classes.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lab_N01_Twisted.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Lect09_DB.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/moriarty-puzzle.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/Untitled1.ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/useagrs.py" />
+    <entry file="file://$USER_HOME$/Downloads/using_functions(1).ipynb" />
+    <entry file="file://$USER_HOME$/Downloads/subnetting_v3.ipynb" />
     <entry file="file://$PROJECT_DIR$/venv/Scripts/django-admin.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website_cv_samy/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website_cv_samy/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -614,9 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website_cv_samy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/website_cv/templates/cv.html" />
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -637,49 +519,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website_cv/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/forms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="265" selection-start-line="265" selection-end-line="265" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#604#673#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website_cv_samy/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        <state relative-caret-position="1700">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website_cv/models.py">
+    <entry file="file://$PROJECT_DIR$/website_cv_samy/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="74" column="13" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="13" />
+        <state relative-caret-position="272">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website_cv_samy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website_cv/migrations/0007_email.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/website_cv/accueil.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website_cv/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="44" column="38" lean-forward="true" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+        <state relative-caret-position="-34">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/website_cv/accueil.html">
+    <entry file="file://$PROJECT_DIR$/website_cv/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="1035">
+          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website_cv/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#1#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

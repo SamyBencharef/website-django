@@ -80,3 +80,19 @@ class Hobbie(models.Model):
 
     def __str__(self):
         return self.expertise
+
+
+
+class Email(models.Model):
+
+    name = models.CharField(max_length=30)
+    email = models.EmailField(max_length=50)
+    topic = models.CharField(max_length=80)
+    message = models.TextField(null=True)
+
+    class Meta:
+        db_table = 'email'
+
+    def __str__(self):
+        return self.topic
+

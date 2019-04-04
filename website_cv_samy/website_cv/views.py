@@ -1,7 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from .forms import EmailForm
+
+# Model import
 from website_cv.models import ProfesionnalExperiences, PersonalInformation, Education, Skill, Hobbie
-from .forms import ContactForm
+
+# Form import
+# from .forms import ContactForm
+from django.core.mail import send_mail, BadHeaderError
 
 # Create your views here.
 
@@ -19,23 +25,34 @@ def view_portfolio(request, id_project):
     )
 
 def view_profesionnalExperience(request):
+
     experiences = ProfesionnalExperiences.objects.all()
     personal_infos = PersonalInformation.objects.all()
     educations = Education.objects.all()
     skills = Skill.objects.all()
     hobbies = Hobbie.objects.all()
 
-    """ FORM PART """
-    form = ContactForm(request.POST or None)
     sendForm = False
 
-    if form.is_valid():
-        name = form.cleaned_data['name']
-        email = form.cleaned_data['email']
-        topic = form.cleaned_data['topic']
-        message = form.cleaned_data['message']
-        forward = form.cleaned_data['forward']
-        sendForm = True
+    if request.method == 'POST':
+        form = EmailForm(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            topic = form.cleaned_data['topic']
+            message = form.cleaned_data['message']
+            emailSender = name + " " + email
+
+            form.save()
+            sendForm = True
+            try:
+                send_mail(topic, message, emailSender, ['samybencharef@gmail.com'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+
+    else:
+        form = EmailForm()
+
 
     return render(request, 'website_cv/accueil.html',
                   {'personal_infos': personal_infos,

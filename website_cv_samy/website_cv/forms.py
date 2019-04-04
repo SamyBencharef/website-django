@@ -1,13 +1,17 @@
 
-from django import forms
 from django.forms.widgets import *
-from django.utils.translation import ugettext_lazy as _
+from .models import Email
+from django.forms import ModelForm
 
 
-class ContactForm(forms.Form):
+class EmailForm(ModelForm):
+    class Meta:
+        model = Email
+        fields = ['name', 'email', 'topic', 'message']
+        labels = {
+            'name': TextInput(attrs={'class': 'form-control'}),
+            'email': EmailInput(attrs={'class': 'form-control'}),
+            'topic': TextInput(attrs={'class': 'form-control'}),
+            'message': TextInput(attrs={'class': 'form-control'}),
+        }
 
-    name = forms.CharField(label=_(u'Name'))
-    email = forms.EmailField(label=_(u'Email'))
-    topic = forms.CharField(label=_(u'Topic'))
-    message = forms.CharField(widget=Textarea(), label=_(u'Message'))
-    forward = forms.BooleanField(help_text="Check this box if you want a copy of your mail", required=False)
