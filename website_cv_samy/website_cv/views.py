@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .forms import EmailForm
+from .forms import EmailForm, CommentaryForm
 
 # Model import
 from website_cv.models import ProfesionnalExperiences, PersonalInformation, Education, Skill, Hobbie
@@ -32,27 +32,32 @@ def view_profesionnalExperience(request):
     skills = Skill.objects.all()
     hobbies = Hobbie.objects.all()
 
-    sendForm = False
+    sendFormEmail = False
+    sendFormCommentary = False
 
     if request.method == 'POST':
-        form = EmailForm(request.POST)
-        if form.is_valid():
-            name = form.cleaned_data['name']
-            email = form.cleaned_data['email']
-            topic = form.cleaned_data['topic']
-            message = form.cleaned_data['message']
+        formEmail = EmailForm(request.POST)
+        formCommentary = CommentaryForm(request.POST)
+        if formEmail.is_valid():
+            name = formEmail.cleaned_data['name']
+            email = formEmail.cleaned_data['email']
+            topic = formEmail.cleaned_data['topic']
+            message = formEmail.cleaned_data['message']
             emailSender = name + " " + email
 
-            form.save()
-            sendForm = True
+            formEmail.save()
+            sendFormEmail = True
             try:
                 send_mail(topic, message, emailSender, ['samybencharef@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
 
+        if formCommentary.is_valid():
+            formCommentary.save()
+            sendFormCommentary = True
     else:
-        form = EmailForm()
-
+        formEmail = EmailForm()
+        formCommentary = CommentaryForm()
 
     return render(request, 'website_cv/accueil.html',
                   {'personal_infos': personal_infos,
@@ -60,5 +65,8 @@ def view_profesionnalExperience(request):
                    'educations': educations,
                    'skills': skills,
                    'hobbies': hobbies,
-                   'form': form,
-                   'sendForm': sendForm})
+                   'formEmail': formEmail,
+                   'sendFormEmail': sendFormEmail,
+                   'formCommentary': formCommentary,
+                   'sendFormCommentary': sendFormCommentary
+                   })

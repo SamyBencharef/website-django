@@ -1,6 +1,7 @@
 from django.db import models
-
+from datetime import datetime
 # Create your models here.
+
 
 class ProfesionnalExperiences(models.Model):
     job = models.CharField(max_length=30)
@@ -19,13 +20,13 @@ class ProfesionnalExperiences(models.Model):
     def __str__(self):
         return self.job
 
+
 class PersonalInformation(models.Model):
     first_name = models.CharField(max_length=10)
     last_name = models.CharField(max_length=10)
 
     title = models.CharField(max_length=40)
     description = models.TextField(null=True)
-
 
     phone_number = models.CharField(max_length=20)
     email = models.CharField(max_length=30)
@@ -60,6 +61,7 @@ class Education(models.Model):
     def __str__(self):
         return self.formation
 
+
 class Skill(models.Model):
     expertise = models.CharField(max_length=30)
     details = models.TextField(null=True)
@@ -82,7 +84,6 @@ class Hobbie(models.Model):
         return self.expertise
 
 
-
 class Email(models.Model):
 
     name = models.CharField(max_length=30)
@@ -95,4 +96,18 @@ class Email(models.Model):
 
     def __str__(self):
         return self.topic
+
+
+class Commentary(models.Model):
+
+    nameEmail = models.CharField(max_length=30)
+    dateEmail = models.DateTimeField(default=datetime.now)
+    topicEmail = models.CharField(max_length=80)
+    messageEmail = models.TextField(null=True)
+
+    class Meta:
+        db_table = 'commentary'
+
+    def __str__(self):
+        return self.topicEmail
 

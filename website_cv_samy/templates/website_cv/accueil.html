@@ -72,15 +72,25 @@
 
     <h1> ------------------------------------------- </h1>
 
-    {% if sendForm %}The message have correctly been sent!{% endif %}
+    <h1> Contact :  </h1>
+    {% if sendFormEmail %}The message have correctly been sent!{% endif %}
     <form method="POST" action="">
         {% csrf_token %}
-        {{ form }}
+        {{ formEmail }}
         <input type="submit" value="Submit" />
     </form>
 
     <h1> ------------------------------------------- </h1>
 
+    <h1> Commentary :  </h1>
+    {% if sendFormCommentary %}The commentary have correctly been sent!{% endif %}
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{ formCommentary }}
+        <input type="submit" value="Submit" />
+    </form>
+
+    <h1> ------------------------------------------- </h1>
 
 
 </head>

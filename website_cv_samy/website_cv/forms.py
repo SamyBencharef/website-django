@@ -1,6 +1,6 @@
 
 from django.forms.widgets import *
-from .models import Email
+from .models import Email, Commentary
 from django.forms import ModelForm
 
 
@@ -15,3 +15,14 @@ class EmailForm(ModelForm):
             'message': TextInput(attrs={'class': 'form-control'}),
         }
 
+
+class CommentaryForm(ModelForm):
+    class Meta:
+        model = Commentary
+        fields = ['nameEmail', 'dateEmail', 'topicEmail', 'messageEmail']
+        labels = {
+            'nameEmail': TextInput(attrs={'class': 'form-control'}),
+            'dateEmail': DateInput(attrs={'class': 'form-control'}),
+            'topicEmail': TextInput(attrs={'class': 'form-control'}),
+            'messageEmail': TextInput(attrs={'class': 'form-control'}),
+        }
