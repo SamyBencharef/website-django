@@ -70,18 +70,18 @@ class Skill(models.Model):
         db_table = 'skill'
 
     def __str__(self):
-        return self.formation
+        return self.expertise
 
 
 class Hobbie(models.Model):
-    expertise = models.CharField(max_length=30)
+    field = models.CharField(max_length=30)
     details = models.TextField(null=True)
 
     class Meta:
         db_table = 'hobbie'
 
     def __str__(self):
-        return self.expertise
+        return self.field
 
 
 class Email(models.Model):
@@ -100,14 +100,17 @@ class Email(models.Model):
 
 class Commentary(models.Model):
 
-    nameEmail = models.CharField(max_length=30)
-    dateEmail = models.DateTimeField(default=datetime.now)
-    topicEmail = models.CharField(max_length=80)
-    messageEmail = models.TextField(null=True)
+    name_commentary = models.CharField(max_length=30)
+    date_commentary = models.DateTimeField(default=datetime.now)
+    topic_commentary = models.CharField(max_length=80)
+    message_commentary = models.TextField(null=True)
+    visible = models.BooleanField(default=False)
 
     class Meta:
+        verbose_name  = 'commentary'
+        verbose_name_plural = 'commentaries'
         db_table = 'commentary'
 
     def __str__(self):
-        return self.topicEmail
+        return self.topic_commentary
 

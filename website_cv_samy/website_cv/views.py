@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from .forms import EmailForm, CommentaryForm
 
 # Model import
-from website_cv.models import ProfesionnalExperiences, PersonalInformation, Education, Skill, Hobbie
+from website_cv.models import ProfesionnalExperiences, PersonalInformation, Education, Skill, Hobbie, Commentary
 
 # Form import
 # from .forms import ContactForm
@@ -31,6 +31,7 @@ def view_profesionnalExperience(request):
     educations = Education.objects.all()
     skills = Skill.objects.all()
     hobbies = Hobbie.objects.all()
+    commentaries = Commentary.objects.filter(visible=True)
 
     sendFormEmail = False
     sendFormCommentary = False
@@ -65,6 +66,7 @@ def view_profesionnalExperience(request):
                    'educations': educations,
                    'skills': skills,
                    'hobbies': hobbies,
+                   'commentaries': commentaries,
                    'formEmail': formEmail,
                    'sendFormEmail': sendFormEmail,
                    'formCommentary': formCommentary,

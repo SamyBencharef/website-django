@@ -62,7 +62,7 @@
 
     {% for hobbie in hobbies %}
         <div class="hobbies">
-            <h3>{{ hobbie.expertise }}</h3>
+            <h3>{{ hobbie.field }}</h3>
             <p>{{ hobbie.details}}</p>
         </div>
     {% empty %}
@@ -89,6 +89,21 @@
         {{ formCommentary }}
         <input type="submit" value="Submit" />
     </form>
+
+    <h1> ------------------------------------------- </h1>
+
+    <h1>Commentaries :</h1>
+
+    {% for commentaries in commentaries %}
+        <div class="commentaries">
+            <h3>{{ commentaries.name_commentary }}</h3>
+            <p>{{ commentaries.date_commentary }} - {{ commentaries.topic_commentary }} </p>
+            <p>{{ commentaries.message_commentary }}</p>
+        </div>
+    {% empty %}
+        <p>No commentaries</p>
+    {% endfor %}
+
 
     <h1> ------------------------------------------- </h1>
 
