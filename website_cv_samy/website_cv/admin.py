@@ -44,8 +44,8 @@ class PersonalInformationAdmin(admin.ModelAdmin):
 
     def apercu_contenu(self, PersonalInformation):
         """
-        Retourne les 40 premiers caractères du contenu de l'article. S'il
-        y a plus de 40 caractères, il faut rajouter des points de suspension.
+        Returns the first 40 characters of the article content. If he
+        there are more than 40 characters, it is necessary to add suspension points.
         """
         text = PersonalInformation.description[0:40]
         if len(PersonalInformation.description) > 40:
@@ -84,10 +84,6 @@ class SkillAdmin(admin.ModelAdmin):
     search_fields = ('expertise', 'details')
 
     def apercu_contenu(self, Skill):
-        """
-        Retourne les 40 premiers caractères du contenu de l'article. S'il
-        y a plus de 40 caractères, il faut rajouter des points de suspension.
-        """
         text = Skill.details[0:40]
         if len(Skill.details) > 40:
             return '%s…' % text
@@ -103,10 +99,6 @@ class HobbiesAdmin(admin.ModelAdmin):
     search_fields = ('field', 'details')
 
     def apercu_contenu(self, Hobbie):
-        """
-        Retourne les 40 premiers caractères du contenu de l'article. S'il
-        y a plus de 40 caractères, il faut rajouter des points de suspension.
-        """
         text = Hobbie.details[0:40]
         if len(Hobbie.details) > 40:
             return '%s…' % text
@@ -124,10 +116,6 @@ class CommentaryAdmin(admin.ModelAdmin):
     search_fields = ('name_commentary', 'date_commentary', 'topic_commentary', 'message_commentary', 'visible')
 
     def apercu_contenu(self, Commentary):
-        """
-        Returns the first 40 characters of the article content. If he
-        there are more than 40 characters, it is necessary to add suspension points.
-        """
         text = Commentary.message_commentary[0:40]
         if len(Commentary.message_commentary) > 40:
             return '%s…' % text
