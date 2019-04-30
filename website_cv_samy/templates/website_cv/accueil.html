@@ -73,7 +73,7 @@
     <h1> ------------------------------------------- </h1>
 
     <h1> Contact :  </h1>
-    {% if sendFormEmail %}The message have correctly been sent!{% endif %}
+    {% if sendFormEmail %}The message have correctly been send!{% endif %}
     <form method="POST" action="">
         {% csrf_token %}
         {{ formEmail }}
@@ -83,7 +83,7 @@
     <h1> ------------------------------------------- </h1>
 
     <h1> Commentary :  </h1>
-    {% if sendFormCommentary %}The commentary have correctly been sent!{% endif %}
+    {% if sendFormCommentary %}The commentary have correctly been sentd{% endif %}
     <form method="POST" action="">
         {% csrf_token %}
         {{ formCommentary }}

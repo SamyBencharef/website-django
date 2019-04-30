@@ -14,8 +14,8 @@ class ProfesionnalExperiences(models.Model):
     logo = models.CharField(max_length=250, blank=True, help_text='path to image')
 
     class Meta:
-        db_table = 'jobs'
-        ordering = ['-date_end', '-date_start']
+        db_table = 'jobs' #name of the table
+        ordering = ['-date_end', '-date_start'] #order of the table
 
     def __str__(self):
         return self.job

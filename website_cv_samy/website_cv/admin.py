@@ -23,7 +23,6 @@ class ProfessionalExperiencesAdmin(admin.ModelAdmin):
         }),
     )
 
-
 class PersonalInformationAdmin(admin.ModelAdmin):
     list_display = ('first_name', 'last_name', 'title', 'apercu_contenu')
 

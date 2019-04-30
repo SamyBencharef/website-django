@@ -6,8 +6,8 @@
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/website_cv/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/website_cv/accueil.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website_cv/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/website_cv/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website_cv/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/website_cv/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website_cv/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/website_cv/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website_cv/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/website_cv/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website_cv/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website_cv/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,59 +38,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website_cv/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="881">
-              <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website_cv/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="143" column="41" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
+            <state relative-caret-position="267">
+              <caret line="129" column="38" lean-forward="true" selection-start-line="129" selection-start-column="38" selection-end-line="129" selection-end-column="38" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website_cv/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1074">
-              <caret line="27" column="9" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website_cv/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-              <folding>
-                <element signature="e#1#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/website_cv/accueil.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -122,20 +77,20 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fefe9641-c7ca-49e8-93fc-9739850e9dc6/console.sql" />
         <option value="$PROJECT_DIR$/website_cv/templates/accueil.html" />
         <option value="$PROJECT_DIR$/website_cv_samy/settings.py" />
-        <option value="$PROJECT_DIR$/website_cv/urls.py" />
         <option value="$PROJECT_DIR$/website_cv_samy/urls.py" />
-        <option value="$PROJECT_DIR$/website_cv/views.py" />
-        <option value="$PROJECT_DIR$/website_cv/models.py" />
-        <option value="$PROJECT_DIR$/templates/website_cv/accueil.html" />
         <option value="$PROJECT_DIR$/website_cv/forms.py" />
+        <option value="$PROJECT_DIR$/website_cv/models.py" />
+        <option value="$PROJECT_DIR$/website_cv/urls.py" />
+        <option value="$PROJECT_DIR$/website_cv/views.py" />
+        <option value="$PROJECT_DIR$/templates/website_cv/accueil.html" />
         <option value="$PROJECT_DIR$/website_cv/admin.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="977" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-10" />
+    <option name="y" value="1" />
+    <option name="width" value="1493" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -278,7 +233,9 @@
       <workItem from="1554222862653" duration="6606000" />
       <workItem from="1554386883528" duration="7098000" />
       <workItem from="1554905372500" duration="4204000" />
-      <workItem from="1556454780257" duration="11813000" />
+      <workItem from="1556454780257" duration="12528000" />
+      <workItem from="1556540274228" duration="9116000" />
+      <workItem from="1556623763708" duration="1267000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1551805354202</created>
@@ -336,11 +293,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554910082543</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="I added and configured the Administration part of the website.&#10;This part contains:&#10;▪ Each data contained by the website (Skill, Professional experiences, commentaries …).&#10;▪ It makes possible to change the data directly from the website.&#10;▪ It allows the administrator to verify a commentary before to publish it on the website.&#10;▪ It has various filter and have an explicit list aspect of the elements.&#10;I also changed the names of the models/SQL variables of Commentary and added a Boolean variable&#10;used to know if a commentary had been validated or not.&#10;I added the commentaries sections in the template to see the commentaries which had been&#10;validated by the administrator.&#10;And finally, I changed the view files in order to query only the commentaries which had been&#10;validated.">
+      <created>1556470737917</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556470737917</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Change some instructions which was wrote in french">
+      <created>1556470877185</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556470877185</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65575000" />
+    <option name="totallyTimeSpent" value="76673000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -352,15 +323,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="1" width="1194" height="830" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2319224" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65436244" visible="true" weight="0.16147308" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.65436244" visible="true" weight="0.41977078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -455,7 +425,9 @@
     <MESSAGE value="Create the forms to allow the user at send an email." />
     <MESSAGE value="Change the existing form in order to have a form using model (ModelForm)." />
     <MESSAGE value="Add the commentary form (add a model for it, also change the views and form files.)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the commentary form (add a model for it, also change the views and form files.)" />
+    <MESSAGE value="I added and configured the Administration part of the website.&#10;This part contains:&#10;▪ Each data contained by the website (Skill, Professional experiences, commentaries …).&#10;▪ It makes possible to change the data directly from the website.&#10;▪ It allows the administrator to verify a commentary before to publish it on the website.&#10;▪ It has various filter and have an explicit list aspect of the elements.&#10;I also changed the names of the models/SQL variables of Commentary and added a Boolean variable&#10;used to know if a commentary had been validated or not.&#10;I added the commentaries sections in the template to see the commentaries which had been&#10;validated by the administrator.&#10;And finally, I changed the view files in order to query only the commentaries which had been&#10;validated." />
+    <MESSAGE value="Change some instructions which was wrote in french" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change some instructions which was wrote in french" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -499,9 +471,6 @@
     <entry file="file://$USER_HOME$/Downloads/using_functions(1).ipynb" />
     <entry file="file://$USER_HOME$/Downloads/subnetting_v3.ipynb" />
     <entry file="file://$PROJECT_DIR$/venv/Scripts/django-admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website_cv/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fefe9641-c7ca-49e8-93fc-9739850e9dc6/console.sql">
@@ -559,33 +528,6 @@
     <entry file="file://$PROJECT_DIR$/website_cv/migrations/0007_email.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/website_cv_samy/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-          <folding>
-            <element signature="e#639#671#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website_cv_samy/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="48" column="3" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website_cv/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/runserver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -602,8 +544,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website_cv/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="84">
+          <caret line="7" selection-start-line="7" selection-end-line="17" />
           <folding>
             <element signature="e#1#35#0" expanded="true" />
           </folding>
@@ -612,38 +554,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website_cv/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1074">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="153">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website_cv/admin.py">
+    <entry file="file://$PROJECT_DIR$/website_cv/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website_cv_samy/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="143" column="41" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-83">
+          <caret line="48" column="3" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website_cv/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="881">
-          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+        <state relative-caret-position="656">
+          <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="57" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/website_cv/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website_cv_samy/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+          <folding>
+            <element signature="e#639#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/website_cv/accueil.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
+        <state relative-caret-position="357">
+          <caret line="87" column="11" selection-start-line="87" selection-start-column="11" selection-end-line="87" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website_cv/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="129" column="38" lean-forward="true" selection-start-line="129" selection-start-column="38" selection-end-line="129" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
